@@ -1,0 +1,38 @@
+﻿@model Veterinaria.Web.Models.Owner
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<div class="row justify-content-center m-3">
+        <div class="col-md-10">
+            <div class="card mb-4">
+                <div class="card-header py-2 bg-dark">
+                    <h6 class="text-white">Nuevo dueño</h6>
+                </div>
+                <div class="card-body">
+                    @using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Añadir" class="btn btn-default btn-outline-dark" />
+                <a href="@Url.Action("Index", "Owners")" class="btn btn-sm btn-outline-danger">Cancelar</a>
+            </div>
+        </div>
+    </div>
+}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+

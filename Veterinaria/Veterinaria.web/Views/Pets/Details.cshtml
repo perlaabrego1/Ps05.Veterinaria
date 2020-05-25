@@ -1,0 +1,95 @@
+﻿@model Veterinaria.web.Models.Pet
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="row justify-content-center m-3">
+        <div class="col-md-10">
+            <div class="card mb-4">
+                <div class="card-header py-2 bg-dark">
+                    <h6 class="text-white">Detalles</h6>
+                </div>
+                <div class="card-body">
+                    <div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PetType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PetType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthDAte)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthDAte)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Race)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Race)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.weight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.weight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Height)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Height)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+    <a href="@Url.Action("Index", "Pets")" class="btn btn-sm btn-danger">Cancelar</a>
+</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
